@@ -1,22 +1,18 @@
-import express from "express";
-import dotenv from "dotenv";
-import pg from "pg";
-import cors from "cors";
+const guestForm = document.getElementById("guestForm");
 
-const app = express();
-app.use(express.json());
-app.use(cors());
-dotenv.config();
+function submissionHandler(event) {
+  event.preventDefault();
+  const formData = new FormData(guestForm);
+  const formValues = Object.fromEntries(formData);
+  fetch("http://localhost:8080/newComment", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formValues),
+  });
 
-const db = new pg.Pool({
-  connectionString: process.env.DATABASE_URL,
-});
+  console.log(formValues);
+}
 
-app.listen(8080, function () {
-  console.log("servers up on port 8080");
-});
-
-// test root route
-app.get("/", function (request, response) {
-  response.json({ message: "Welcome to my server" });
-});
+guestForm.addEventListener("submit", submissionHandler);

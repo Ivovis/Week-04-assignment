@@ -6,7 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <script type="module" src="./src/main.js"></script>
-    <title>Pangalatic Visitor Book</title>
+    <title>Pan Galactic Guestbook</title>
   </head>
-  <body></body>
+  <body>
+    <fieldset>
+      <legend>Tell us your thoughts</legend>
+      <form id="guestForm">
+        <label for="userName">Name:</label>
+        <input
+          type="text"
+          id="userComment"
+          name="userName"
+          required
+          maxlength="60"
+        />
+        <label for="userComment">Comment:</label>
+        <input id="userComment" name="userComment" required maxlength="120" />
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+  </body>
 </html>

@@ -26,4 +26,7 @@ research SQL
 1. create project
 2. create database/table with dummy data
 3. file checkpoint (update readme.md, create the repo, push the work so far)
-4. 
+. create the client wireframe
+. get the client created with basic elements
+. create the server get route for the current database 
+. create the server post route to add new comment to the database
