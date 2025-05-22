@@ -4,7 +4,7 @@ function submissionHandler(event) {
   event.preventDefault();
   const formData = new FormData(guestForm);
   const formValues = Object.fromEntries(formData);
-  fetch("http://localhost:8080/newComment", {
+  const reply = fetch("http://localhost:8080/newComment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

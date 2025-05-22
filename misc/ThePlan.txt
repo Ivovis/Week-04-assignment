@@ -23,10 +23,13 @@ research SQL
     retrieve comments in ascending order        - SELECT * FROM guestbook ORDER BY id ASC;
 
 
-1. create project
-2. create database/table with dummy data
-3. file checkpoint (update readme.md, create the repo, push the work so far)
-. create the client wireframe
-. get the client created with basic elements
-. create the server get route for the current database 
+1. create project - done
+2. create database/table with dummy data - done
+3. file checkpoint (update readme.md, create the repo, push the work so far) - done
+. create the client wireframe - done
+. get the client created with basic elements - done
 . create the server post route to add new comment to the database
+. create the server get route for the current database so the client can ask for the current list of past comments
+
+
+

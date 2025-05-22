@@ -18,5 +18,20 @@ app.listen(8080, function () {
 
 // test root route
 app.get("/", function (request, response) {
-  response.json({ message: "Welcome to my server" });
+  response.json({ message: "Get out of my house!" });
+});
+
+app.post("/newComment", (req, res) => {
+  const body = req.body;
+  console.log(body);
+
+  // sanity checks even though the client should behave, people don't!.
+  // res.json({ message: "Nope not doing that" });
+  // did we get a userName -> no so ignore
+  // is userName empty -> ignore
+  // did we get comment -> no so ignore
+  // is comment empty -> ignore
+
+
+  DO THIS !
 });

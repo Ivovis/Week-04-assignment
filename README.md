@@ -19,4 +19,8 @@ Themed to help assessor's relentless assessing from becoming too boring.
 
     Completed basic client, its currently complaining because the servers not been done yet, but it is reporting the form data to the console correctly, looks like I'm developing this like eating a lion bar from both ends at once!.
 
+<img src="./misc/Week4Wireframe.png" alt="wireframe layout of the planned application" width="400">
+
+    CSS to follow
+
 ---
