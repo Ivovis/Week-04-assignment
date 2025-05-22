@@ -1,0 +1,29 @@
+
+create the monorepo with basic static client and server
+
+Use existing database and create a dedicated table for the guestbook
+    build the table in the queries.sql file and find out how to use it on the supabase site - nm just copy and paste.
+
+research SQL 
+
+    -- Insert a new comment into the guestbook
+
+    format for dummy data
+
+    INSERT INTO guestbook (guestName, guestComment) VALUES
+    ('John Doe', 'This is a great guestbook!'),
+    ('Jane Smith', 'I love this place!'),
+    ('Alice Johnson', 'Thanks for the wonderful service!');
+
+    maybe use a seed.js file for this and have > 30 entries created by GPT4all using lama3 model.
+
+
+    retrieve all comments from the guestbook    - SELECT * FROM guestbook;
+    retrieve comments in descending order       - SELECT * FROM guestbook ORDER BY id DESC;
+    retrieve comments in ascending order        - SELECT * FROM guestbook ORDER BY id ASC;
+
+
+1. create project
+2. create database/table with dummy data
+3. file checkpoint (update readme.md, create the repo, push the work so far)
+4. 
