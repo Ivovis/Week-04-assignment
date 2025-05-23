@@ -36,3 +36,5 @@ Checkpoint 4: 2025 05 23 1054
 - I now have the chain working, the client asks for the current comments and get then displays them, a new comment can be created and will be added to the database. I have the query asking for the result to be ordered in descending based on the ID so the latest comments are shown at the top of the list rendered to the user.
 
 outstanding issue to be fixed next, after adding a new comment the page needs to be reloaded for the user to see it, I suspect theres a better mechanisim for this, for now I will only use what we have covered in the bootcamp, I will use setInterval to request the current comments every 5 seconds and I may also use a setTimeout to call for an update 1 second after the post request, to make the new comment appear faster.
+
+---
