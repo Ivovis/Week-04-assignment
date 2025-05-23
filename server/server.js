@@ -32,6 +32,9 @@ app.post("/newComment", (req, res) => {
   // did we get comment -> no so ignore
   // is comment empty -> ignore
 
-
-  DO THIS !
+  const query = db.query(
+    `INSERT INTO "guestBook"("guestName","guestComment") VALUES ($1,$2)`,
+    [body.userName, body.userComment]
+  );
+  res.json(query);
 });

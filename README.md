@@ -24,3 +24,7 @@ Themed to help assessor's relentless assessing from becoming too boring.
     CSS to follow
 
 ---
+
+Checkpoint 3: 2025 05 23 9:15
+
+- The server now accepts the clients post and sends it to the database, no problems here, I tested and found that I must use quotes around my table name and column names because I am using camel case for both, researching on this it would seem this issue will depend on what database system is being used, and also that it is recommended to use lower case table names, and either all upper or lower for the column names - lesson learned.
