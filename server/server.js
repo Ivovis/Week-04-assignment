@@ -21,6 +21,7 @@ app.get("/", function (request, response) {
   response.json({ message: "Get out of my house!" });
 });
 
+// new comment from user route
 app.post("/newComment", (req, res) => {
   const body = req.body;
   console.log(body);
@@ -37,4 +38,14 @@ app.post("/newComment", (req, res) => {
     [body.userName, body.userComment]
   );
   res.json(query);
+});
+
+// user request for past comments route
+app.get("/comments", async (req, res) => {
+  const query = await db.query(`SELECT * from "guestBook" ORDER BY "id" DESC`);
+  // get the rows - will be filtering them later
+  let data = query.rows;
+
+  // console.log("The data:", data);
+  res.json(data);
 });
