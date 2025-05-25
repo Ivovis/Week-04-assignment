@@ -12,9 +12,7 @@ const db = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
 });
 
-app.listen(10000, function () {
-  console.log("servers up on port 8080");
-});
+app.listen(10000, function () {});
 
 // test root route
 app.get("/", function (request, response) {
