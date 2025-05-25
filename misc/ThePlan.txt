@@ -24,12 +24,28 @@ research SQL
 
 
 1. create project - done
-2. create database/table with dummy data - done
-3. file checkpoint (update readme.md, create the repo, push the work so far) - done
-. create the client wireframe - done
-. get the client created with basic elements - done
-. create the server post route to add new comment to the database
-. create the server get route for the current database so the client can ask for the current list of past comments
 
+2. create database/table with dummy data - done
+
+3. file checkpoint (update readme.md, create the repo, push the work so far) - done
+
+4. create the client wireframe - done
+
+5. get the client created with basic elements - done
+
+6. create the server post route to add new comment to the database
+
+7. create the server get route for the current database so the client can ask for the current list of past comments
+
+8. add CSS
+    I've added in the delete button just for styling.
+
+9. add delete button
+    and server route to handle delete.
+
+10. add like button
+    this will need an update to the database with a default of 0 on record creation
+
+11. more CSS tweaks - learn about animation
 
 

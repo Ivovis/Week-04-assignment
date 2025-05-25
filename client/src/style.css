@@ -3,3 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(33, 59, 12);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 5px;
+}
+
+#subby {
+  display: absolute;
+  width: 5rem;
+  height: 2em;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0.6rem;
+  margin-left: 0;
+}
+
+#commentSectionID {
+  background-color: black;
+  padding: 1rem;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+  margin: 1rem;
+}
