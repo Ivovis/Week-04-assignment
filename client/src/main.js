@@ -1,6 +1,7 @@
 // Theres probably a way to do this in the build process!
 
-const SERVURL = "http://localhost:8080";
+// const SERVURL = "http://localhost:8080";
+const SERVURL = "https://week-04-assignment.onrender.com";
 
 // handle user submissions
 const guestForm = document.getElementById("guestForm");
